@@ -24,6 +24,8 @@ $f3->route('GET /', function($f3) {
 	$f3->set('pi', pi());
 	$f3->set('fruits', getFruits());
 	$f3->set('salaries', getSalaries());
+	$f3->set('num', 10);
+	$f3->set('preferredCustomer', true);
 
 	// load template
 	$view = new Template();

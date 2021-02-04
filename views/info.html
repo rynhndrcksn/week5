@@ -40,6 +40,20 @@
 			<li class="text-capitalize">{{ @employee }} earns ${{ number_format(@salary, 2, '.', ',') }}</li>
 		</repeat>
 	</ul>
+
+	<h3>Conditionals:</h3>
+	<!-- check will check a conditional and true prints if it's true, false print if it's false	-->
+	<check if="{{ @num == 5 }}">
+		<true>
+			<p>Num equals 5!</p>
+		</true>
+		<false>
+			<p>Num doesn't equal 5!</p>
+		</false>
+	</check>
+	<check if="{{ @preferredCustomer }}">
+		<p>Thank you preferred customer!</p>
+	</check>
 </div>
 </body>
 </html>
