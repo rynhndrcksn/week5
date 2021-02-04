@@ -15,7 +15,7 @@ $f3 = Base::instance();
 $f3->route('GET /', function() {
 	// create a new view, then sends it to the client
 	$view = new Template();
-	echo $view->render('views/home.html');
+	echo $view->render('views/info.html');
 });
 
 // run fat free HAS TO BE THE LAST THING IN FILE
